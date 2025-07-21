@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prompt Polish</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-4 font-sans min-w-[300px]">
+  <div class="flex flex-col gap-4">
+    <h2 class="text-xl font-semibold text-gray-800">Prompt Polish</h2>
+    <textarea id="userPrompt" placeholder="Type your prompt here..." 
+      class="w-full h-24 p-2 border border-gray-300 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+    <button id="enhanceBtn" 
+      class="bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-200">Enhance</button>
+    <h3 class="text-gray-700 font-medium">Enhanced Prompt:</h3>
+    <pre id="result" class="bg-white p-3 rounded-md border border-gray-300 whitespace-pre-wrap break-words min-h-[80px]"></pre>
+    <div id="loading" class="italic text-gray-500" style="display:none;">Processing...</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
