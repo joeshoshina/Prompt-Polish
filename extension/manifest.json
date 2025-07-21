@@ -2,10 +2,15 @@
   "manifest_version": 3,
   "name": "Prompt Polish Extension",
   "version": "0.1",
+  "description": "A Chrome extension to polish prompts for better AI responses.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Prompt Polish"
+  }
 }
